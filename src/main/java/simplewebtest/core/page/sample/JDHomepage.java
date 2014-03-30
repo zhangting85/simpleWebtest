@@ -2,7 +2,9 @@ package simplewebtest.core.page.sample;
 
 import simplewebtest.core.Page;
 import simplewebtest.core.page.module.sample.SearchHeaderModule;
-
+/**
+ *京东首页
+ */
 public class JDHomepage extends Page {
 /**
  *URL常量，很少用到，一般在起始页用，有时放到配置文件里去统一管理

@@ -1,5 +1,7 @@
 package simplewebtest.core;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
@@ -15,7 +17,11 @@ public class TestCase {
 	 * shares the same driver manager
 	 */
 	public static DriverManager manager=new DriverManager();
-
+	/**
+	 * 打log用的对象。
+	 * print log
+	 */
+	private Log log = LogFactory.getLog(this.getClass());
 	/**
 	 * 决定这个TestCase是用什么浏览器的driver来执行。
 	 * 由于设置了BeforeMethod标签，这个方法将由TestNG在每个TestMethod被执行前调用。
@@ -28,6 +34,8 @@ public class TestCase {
 	@BeforeMethod(alwaysRun=true)
 	@Parameters("brwoser")
 	protected void setDriver(@Optional("firefox") String browser){
+	//打印类名
+	log.info("TestCase = "+ this.getClass().getSimpleName());
 	manager.setDriver(browser);
 	}
 

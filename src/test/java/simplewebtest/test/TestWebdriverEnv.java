@@ -1,5 +1,6 @@
 package simplewebtest.test;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
@@ -16,7 +17,6 @@ public class TestWebdriverEnv {
 		//check if firefox driver runs successfully on your computer
 		WebDriver driver=new FirefoxDriver();
 		driver.get("https://github.com/zhangting85/simpleWebtest");
-	
 	}
 	
 	

@@ -1,0 +1,624 @@
+[DEBUG][2014-04-05 21:07:39]开始
+[DEBUG][2014-04-05 21:08:25]开始
+[DEBUG][2014-04-05 21:17:55]Start
+[DEBUG][2014-04-05 21:19:19]Start
+[DEBUG][2014-04-05 21:22:16]Start
+[DEBUG][2014-04-05 21:22:16]End
+[DEBUG][2014-04-05 21:29:23]Start
+[DEBUG][2014-04-05 21:29:23]End
+[DEBUG][2014-04-05 21:38:14]Start logging
+[DEBUG][2014-04-05 21:38:14]End loggin
+[DEBUG][2014-04-05 21:38:53]Start logging
+[DEBUG][2014-04-05 21:38:53]End loggin
+[DEBUG][2014-04-05 21:39:22]Start logging1
+[DEBUG][2014-04-05 21:39:22]End logging2
+[DEBUG][2014-04-05 21:56:09]Start logging1
+[DEBUG][2014-04-05 21:56:17]Get connection: {}->http://127.0.0.1:7055, timeout = 120000
+[DEBUG][2014-04-05 21:56:17][{}->http://127.0.0.1:7055] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+[DEBUG][2014-04-05 21:56:17]No free connections [{}->http://127.0.0.1:7055][null]
+[DEBUG][2014-04-05 21:56:17]Available capacity: 2000 out of 2000 [{}->http://127.0.0.1:7055][null]
+[DEBUG][2014-04-05 21:56:17]Creating new connection [{}->http://127.0.0.1:7055]
+[DEBUG][2014-04-05 21:56:17]Connecting to 127.0.0.1:7055
+[DEBUG][2014-04-05 21:56:17]CookieSpec selected: best-match
+[DEBUG][2014-04-05 21:56:17]Auth cache not set in the context
+[DEBUG][2014-04-05 21:56:17]Target auth state: UNCHALLENGED
+[DEBUG][2014-04-05 21:56:17]Proxy auth state: UNCHALLENGED
+[DEBUG][2014-04-05 21:56:17]Attempt 1 to execute request
+[DEBUG][2014-04-05 21:56:17]Sending request: POST /hub/session HTTP/1.1
+[DEBUG][2014-04-05 21:56:17] >> "POST /hub/session HTTP/1.1[\r][\n]"
+[DEBUG][2014-04-05 21:56:17] >> "Accept: application/json, image/png[\r][\n]"
+[DEBUG][2014-04-05 21:56:17] >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+[DEBUG][2014-04-05 21:56:17] >> "Content-Length: 105[\r][\n]"
+[DEBUG][2014-04-05 21:56:17] >> "Host: 127.0.0.1:7055[\r][\n]"
+[DEBUG][2014-04-05 21:56:17] >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG][2014-04-05 21:56:17] >> "[\r][\n]"
+[DEBUG][2014-04-05 21:56:17]>> POST /hub/session HTTP/1.1
+[DEBUG][2014-04-05 21:56:17]>> Accept: application/json, image/png
+[DEBUG][2014-04-05 21:56:17]>> Content-Type: application/json; charset=utf-8
+[DEBUG][2014-04-05 21:56:17]>> Content-Length: 105
+[DEBUG][2014-04-05 21:56:17]>> Host: 127.0.0.1:7055
+[DEBUG][2014-04-05 21:56:17]>> Connection: Keep-Alive
+[DEBUG][2014-04-05 21:56:17] >> "{"desiredCapabilities":{"platform":"ANY","browserName":"firefox","version":""},"requiredCapabilities":{}}"
+[DEBUG][2014-04-05 21:56:17] << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG][2014-04-05 21:56:17] << "content-type: application/json; charset=UTF-8[\r][\n]"
+[DEBUG][2014-04-05 21:56:17] << "connection: close[\r][\n]"
+[DEBUG][2014-04-05 21:56:17] << "content-length: 454[\r][\n]"
+[DEBUG][2014-04-05 21:56:17] << "server: httpd.js[\r][\n]"
+[DEBUG][2014-04-05 21:56:17] << "date: Sat, 05 Apr 2014 13:56:17 GMT[\r][\n]"
+[DEBUG][2014-04-05 21:56:17] << "[\r][\n]"
+[DEBUG][2014-04-05 21:56:17]Receiving response: HTTP/1.1 200 OK
+[DEBUG][2014-04-05 21:56:17]<< HTTP/1.1 200 OK
+[DEBUG][2014-04-05 21:56:17]<< content-type: application/json; charset=UTF-8
+[DEBUG][2014-04-05 21:56:17]<< connection: close
+[DEBUG][2014-04-05 21:56:17]<< content-length: 454
+[DEBUG][2014-04-05 21:56:17]<< server: httpd.js
+[DEBUG][2014-04-05 21:56:17]<< date: Sat, 05 Apr 2014 13:56:17 GMT
+[DEBUG][2014-04-05 21:56:17] << "{"name":"newSession","sessionId":"8d8422e2-1a06-cd49-a2a8-1a8391c91b96","status":0,"value":{"cssSelectorsEnabled":true,"browserName":"firefox","handlesAlerts":true,"javascriptEnabled":true,"nativeEvents":false,"platform":"Darwin","rotatable":false,"takesScreenshot":true,"version":"23.0.1","webStorageEnabled":true,"applicationCacheEnabled":true,"databaseEnabled":true,"locationContextEnabled":true,"browserConnectionEnabled":true,"acceptSslCerts":true}}"
+[DEBUG][2014-04-05 21:56:17]Connection 0.0.0.0:55434<->127.0.0.1:7055 shut down
+[DEBUG][2014-04-05 21:56:17]Released connection is not reusable.
+[DEBUG][2014-04-05 21:56:17]Releasing connection [{}->http://127.0.0.1:7055][null]
+[DEBUG][2014-04-05 21:56:17]Connection 0.0.0.0:55434<->127.0.0.1:7055 closed
+[DEBUG][2014-04-05 21:56:17]Notifying no-one, there are no waiting threads
+[DEBUG][2014-04-05 21:56:17]Get connection: {}->http://127.0.0.1:7055, timeout = 120000
+[DEBUG][2014-04-05 21:56:17][{}->http://127.0.0.1:7055] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+[DEBUG][2014-04-05 21:56:17]No free connections [{}->http://127.0.0.1:7055][null]
+[DEBUG][2014-04-05 21:56:17]Available capacity: 2000 out of 2000 [{}->http://127.0.0.1:7055][null]
+[DEBUG][2014-04-05 21:56:17]Creating new connection [{}->http://127.0.0.1:7055]
+[DEBUG][2014-04-05 21:56:17]Connecting to 127.0.0.1:7055
+[DEBUG][2014-04-05 21:56:17]CookieSpec selected: best-match
+[DEBUG][2014-04-05 21:56:17]Auth cache not set in the context
+[DEBUG][2014-04-05 21:56:17]Target auth state: UNCHALLENGED
+[DEBUG][2014-04-05 21:56:17]Proxy auth state: UNCHALLENGED
+[DEBUG][2014-04-05 21:56:17]Attempt 1 to execute request
+[DEBUG][2014-04-05 21:56:17]Sending request: POST /hub/session/8d8422e2-1a06-cd49-a2a8-1a8391c91b96/url HTTP/1.1
+[DEBUG][2014-04-05 21:56:17] >> "POST /hub/session/8d8422e2-1a06-cd49-a2a8-1a8391c91b96/url HTTP/1.1[\r][\n]"
+[DEBUG][2014-04-05 21:56:17] >> "Accept: application/json, image/png[\r][\n]"
+[DEBUG][2014-04-05 21:56:17] >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+[DEBUG][2014-04-05 21:56:17] >> "Content-Length: 54[\r][\n]"
+[DEBUG][2014-04-05 21:56:17] >> "Host: 127.0.0.1:7055[\r][\n]"
+[DEBUG][2014-04-05 21:56:17] >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG][2014-04-05 21:56:17] >> "[\r][\n]"
+[DEBUG][2014-04-05 21:56:17]>> POST /hub/session/8d8422e2-1a06-cd49-a2a8-1a8391c91b96/url HTTP/1.1
+[DEBUG][2014-04-05 21:56:17]>> Accept: application/json, image/png
+[DEBUG][2014-04-05 21:56:17]>> Content-Type: application/json; charset=utf-8
+[DEBUG][2014-04-05 21:56:17]>> Content-Length: 54
+[DEBUG][2014-04-05 21:56:17]>> Host: 127.0.0.1:7055
+[DEBUG][2014-04-05 21:56:17]>> Connection: Keep-Alive
+[DEBUG][2014-04-05 21:56:17] >> "{"url":"https://github.com/zhangting85/simpleWebtest"}"
+[DEBUG][2014-04-05 21:56:43] << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG][2014-04-05 21:56:43] << "content-type: application/json; charset=UTF-8[\r][\n]"
+[DEBUG][2014-04-05 21:56:43] << "connection: close[\r][\n]"
+[DEBUG][2014-04-05 21:56:43] << "content-length: 87[\r][\n]"
+[DEBUG][2014-04-05 21:56:43] << "server: httpd.js[\r][\n]"
+[DEBUG][2014-04-05 21:56:43] << "date: Sat, 05 Apr 2014 13:56:43 GMT[\r][\n]"
+[DEBUG][2014-04-05 21:56:43] << "[\r][\n]"
+[DEBUG][2014-04-05 21:56:43]Receiving response: HTTP/1.1 200 OK
+[DEBUG][2014-04-05 21:56:43]<< HTTP/1.1 200 OK
+[DEBUG][2014-04-05 21:56:43]<< content-type: application/json; charset=UTF-8
+[DEBUG][2014-04-05 21:56:43]<< connection: close
+[DEBUG][2014-04-05 21:56:43]<< content-length: 87
+[DEBUG][2014-04-05 21:56:43]<< server: httpd.js
+[DEBUG][2014-04-05 21:56:43]<< date: Sat, 05 Apr 2014 13:56:43 GMT
+[DEBUG][2014-04-05 21:56:43] << "{"name":"get","sessionId":"8d8422e2-1a06-cd49-a2a8-1a8391c91b96","status":0,"value":""}"
+[DEBUG][2014-04-05 21:56:43]Connection 0.0.0.0:55435<->127.0.0.1:7055 shut down
+[DEBUG][2014-04-05 21:56:43]Released connection is not reusable.
+[DEBUG][2014-04-05 21:56:43]Releasing connection [{}->http://127.0.0.1:7055][null]
+[DEBUG][2014-04-05 21:56:43]Connection 0.0.0.0:55435<->127.0.0.1:7055 closed
+[DEBUG][2014-04-05 21:56:43]Notifying no-one, there are no waiting threads
+[DEBUG][2014-04-05 21:56:43]End logging2
+[DEBUG][2014-04-05 21:57:48]Start logging1
+[DEBUG][2014-04-05 21:57:51]Get connection: {}->http://127.0.0.1:7056, timeout = 120000
+[DEBUG][2014-04-05 21:57:51][{}->http://127.0.0.1:7056] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+[DEBUG][2014-04-05 21:57:51]No free connections [{}->http://127.0.0.1:7056][null]
+[DEBUG][2014-04-05 21:57:51]Available capacity: 2000 out of 2000 [{}->http://127.0.0.1:7056][null]
+[DEBUG][2014-04-05 21:57:51]Creating new connection [{}->http://127.0.0.1:7056]
+[DEBUG][2014-04-05 21:57:51]Connecting to 127.0.0.1:7056
+[DEBUG][2014-04-05 21:57:51]CookieSpec selected: best-match
+[DEBUG][2014-04-05 21:57:51]Auth cache not set in the context
+[DEBUG][2014-04-05 21:57:51]Target auth state: UNCHALLENGED
+[DEBUG][2014-04-05 21:57:51]Proxy auth state: UNCHALLENGED
+[DEBUG][2014-04-05 21:57:51]Attempt 1 to execute request
+[DEBUG][2014-04-05 21:57:51]Sending request: POST /hub/session HTTP/1.1
+[DEBUG][2014-04-05 21:57:51] >> "POST /hub/session HTTP/1.1[\r][\n]"
+[DEBUG][2014-04-05 21:57:51] >> "Accept: application/json, image/png[\r][\n]"
+[DEBUG][2014-04-05 21:57:51] >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+[DEBUG][2014-04-05 21:57:51] >> "Content-Length: 105[\r][\n]"
+[DEBUG][2014-04-05 21:57:51] >> "Host: 127.0.0.1:7056[\r][\n]"
+[DEBUG][2014-04-05 21:57:51] >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG][2014-04-05 21:57:51] >> "[\r][\n]"
+[DEBUG][2014-04-05 21:57:51]>> POST /hub/session HTTP/1.1
+[DEBUG][2014-04-05 21:57:51]>> Accept: application/json, image/png
+[DEBUG][2014-04-05 21:57:51]>> Content-Type: application/json; charset=utf-8
+[DEBUG][2014-04-05 21:57:51]>> Content-Length: 105
+[DEBUG][2014-04-05 21:57:51]>> Host: 127.0.0.1:7056
+[DEBUG][2014-04-05 21:57:51]>> Connection: Keep-Alive
+[DEBUG][2014-04-05 21:57:51] >> "{"desiredCapabilities":{"platform":"ANY","browserName":"firefox","version":""},"requiredCapabilities":{}}"
+[DEBUG][2014-04-05 21:57:51] << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG][2014-04-05 21:57:51] << "content-type: application/json; charset=UTF-8[\r][\n]"
+[DEBUG][2014-04-05 21:57:51] << "connection: close[\r][\n]"
+[DEBUG][2014-04-05 21:57:51] << "content-length: 454[\r][\n]"
+[DEBUG][2014-04-05 21:57:51] << "server: httpd.js[\r][\n]"
+[DEBUG][2014-04-05 21:57:51] << "date: Sat, 05 Apr 2014 13:57:51 GMT[\r][\n]"
+[DEBUG][2014-04-05 21:57:51] << "[\r][\n]"
+[DEBUG][2014-04-05 21:57:51]Receiving response: HTTP/1.1 200 OK
+[DEBUG][2014-04-05 21:57:51]<< HTTP/1.1 200 OK
+[DEBUG][2014-04-05 21:57:51]<< content-type: application/json; charset=UTF-8
+[DEBUG][2014-04-05 21:57:51]<< connection: close
+[DEBUG][2014-04-05 21:57:51]<< content-length: 454
+[DEBUG][2014-04-05 21:57:51]<< server: httpd.js
+[DEBUG][2014-04-05 21:57:51]<< date: Sat, 05 Apr 2014 13:57:51 GMT
+[DEBUG][2014-04-05 21:57:51] << "{"name":"newSession","sessionId":"a1c13506-ceeb-244d-84c4-82248ca416da","status":0,"value":{"cssSelectorsEnabled":true,"browserName":"firefox","handlesAlerts":true,"javascriptEnabled":true,"nativeEvents":false,"platform":"Darwin","rotatable":false,"takesScreenshot":true,"version":"23.0.1","webStorageEnabled":true,"applicationCacheEnabled":true,"databaseEnabled":true,"locationContextEnabled":true,"browserConnectionEnabled":true,"acceptSslCerts":true}}"
+[DEBUG][2014-04-05 21:57:51]Connection 0.0.0.0:55536<->127.0.0.1:7056 shut down
+[DEBUG][2014-04-05 21:57:51]Released connection is not reusable.
+[DEBUG][2014-04-05 21:57:51]Releasing connection [{}->http://127.0.0.1:7056][null]
+[DEBUG][2014-04-05 21:57:51]Connection 0.0.0.0:55536<->127.0.0.1:7056 closed
+[DEBUG][2014-04-05 21:57:51]Notifying no-one, there are no waiting threads
+[DEBUG][2014-04-05 21:57:51]Get connection: {}->http://127.0.0.1:7056, timeout = 120000
+[DEBUG][2014-04-05 21:57:51][{}->http://127.0.0.1:7056] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+[DEBUG][2014-04-05 21:57:51]No free connections [{}->http://127.0.0.1:7056][null]
+[DEBUG][2014-04-05 21:57:51]Available capacity: 2000 out of 2000 [{}->http://127.0.0.1:7056][null]
+[DEBUG][2014-04-05 21:57:51]Creating new connection [{}->http://127.0.0.1:7056]
+[DEBUG][2014-04-05 21:57:51]Connecting to 127.0.0.1:7056
+[DEBUG][2014-04-05 21:57:51]CookieSpec selected: best-match
+[DEBUG][2014-04-05 21:57:51]Auth cache not set in the context
+[DEBUG][2014-04-05 21:57:51]Target auth state: UNCHALLENGED
+[DEBUG][2014-04-05 21:57:51]Proxy auth state: UNCHALLENGED
+[DEBUG][2014-04-05 21:57:51]Attempt 1 to execute request
+[DEBUG][2014-04-05 21:57:51]Sending request: POST /hub/session/a1c13506-ceeb-244d-84c4-82248ca416da/url HTTP/1.1
+[DEBUG][2014-04-05 21:57:51] >> "POST /hub/session/a1c13506-ceeb-244d-84c4-82248ca416da/url HTTP/1.1[\r][\n]"
+[DEBUG][2014-04-05 21:57:51] >> "Accept: application/json, image/png[\r][\n]"
+[DEBUG][2014-04-05 21:57:51] >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+[DEBUG][2014-04-05 21:57:51] >> "Content-Length: 54[\r][\n]"
+[DEBUG][2014-04-05 21:57:51] >> "Host: 127.0.0.1:7056[\r][\n]"
+[DEBUG][2014-04-05 21:57:51] >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG][2014-04-05 21:57:51] >> "[\r][\n]"
+[DEBUG][2014-04-05 21:57:51]>> POST /hub/session/a1c13506-ceeb-244d-84c4-82248ca416da/url HTTP/1.1
+[DEBUG][2014-04-05 21:57:51]>> Accept: application/json, image/png
+[DEBUG][2014-04-05 21:57:51]>> Content-Type: application/json; charset=utf-8
+[DEBUG][2014-04-05 21:57:51]>> Content-Length: 54
+[DEBUG][2014-04-05 21:57:51]>> Host: 127.0.0.1:7056
+[DEBUG][2014-04-05 21:57:51]>> Connection: Keep-Alive
+[DEBUG][2014-04-05 21:57:51] >> "{"url":"https://github.com/zhangting85/simpleWebtest"}"
+[DEBUG][2014-04-05 21:58:02] << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG][2014-04-05 21:58:02] << "content-type: application/json; charset=UTF-8[\r][\n]"
+[DEBUG][2014-04-05 21:58:02] << "connection: close[\r][\n]"
+[DEBUG][2014-04-05 21:58:02] << "content-length: 87[\r][\n]"
+[DEBUG][2014-04-05 21:58:02] << "server: httpd.js[\r][\n]"
+[DEBUG][2014-04-05 21:58:02] << "date: Sat, 05 Apr 2014 13:58:02 GMT[\r][\n]"
+[DEBUG][2014-04-05 21:58:02] << "[\r][\n]"
+[DEBUG][2014-04-05 21:58:02]Receiving response: HTTP/1.1 200 OK
+[DEBUG][2014-04-05 21:58:02]<< HTTP/1.1 200 OK
+[DEBUG][2014-04-05 21:58:02]<< content-type: application/json; charset=UTF-8
+[DEBUG][2014-04-05 21:58:02]<< connection: close
+[DEBUG][2014-04-05 21:58:02]<< content-length: 87
+[DEBUG][2014-04-05 21:58:02]<< server: httpd.js
+[DEBUG][2014-04-05 21:58:02]<< date: Sat, 05 Apr 2014 13:58:02 GMT
+[DEBUG][2014-04-05 21:58:02] << "{"name":"get","sessionId":"a1c13506-ceeb-244d-84c4-82248ca416da","status":0,"value":""}"
+[DEBUG][2014-04-05 21:58:02]Connection 0.0.0.0:55537<->127.0.0.1:7056 shut down
+[DEBUG][2014-04-05 21:58:02]Released connection is not reusable.
+[DEBUG][2014-04-05 21:58:02]Releasing connection [{}->http://127.0.0.1:7056][null]
+[DEBUG][2014-04-05 21:58:02]Connection 0.0.0.0:55537<->127.0.0.1:7056 closed
+[DEBUG][2014-04-05 21:58:02]Notifying no-one, there are no waiting threads
+[DEBUG][2014-04-05 21:58:02]End logging2
+[DEBUG][2014-04-05 22:00:13]Start logging1
+[DEBUG][2014-04-05 22:00:16]Get connection: {}->http://127.0.0.1:7057, timeout = 120000
+[DEBUG][2014-04-05 22:00:16][{}->http://127.0.0.1:7057] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+[DEBUG][2014-04-05 22:00:16]No free connections [{}->http://127.0.0.1:7057][null]
+[DEBUG][2014-04-05 22:00:16]Available capacity: 2000 out of 2000 [{}->http://127.0.0.1:7057][null]
+[DEBUG][2014-04-05 22:00:16]Creating new connection [{}->http://127.0.0.1:7057]
+[DEBUG][2014-04-05 22:00:16]Connecting to 127.0.0.1:7057
+[DEBUG][2014-04-05 22:00:16]CookieSpec selected: best-match
+[DEBUG][2014-04-05 22:00:16]Auth cache not set in the context
+[DEBUG][2014-04-05 22:00:16]Target auth state: UNCHALLENGED
+[DEBUG][2014-04-05 22:00:16]Proxy auth state: UNCHALLENGED
+[DEBUG][2014-04-05 22:00:16]Attempt 1 to execute request
+[DEBUG][2014-04-05 22:00:16]Sending request: POST /hub/session HTTP/1.1
+[DEBUG][2014-04-05 22:00:16] >> "POST /hub/session HTTP/1.1[\r][\n]"
+[DEBUG][2014-04-05 22:00:16] >> "Accept: application/json, image/png[\r][\n]"
+[DEBUG][2014-04-05 22:00:16] >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+[DEBUG][2014-04-05 22:00:16] >> "Content-Length: 105[\r][\n]"
+[DEBUG][2014-04-05 22:00:16] >> "Host: 127.0.0.1:7057[\r][\n]"
+[DEBUG][2014-04-05 22:00:16] >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG][2014-04-05 22:00:16] >> "[\r][\n]"
+[DEBUG][2014-04-05 22:00:16]>> POST /hub/session HTTP/1.1
+[DEBUG][2014-04-05 22:00:16]>> Accept: application/json, image/png
+[DEBUG][2014-04-05 22:00:16]>> Content-Type: application/json; charset=utf-8
+[DEBUG][2014-04-05 22:00:16]>> Content-Length: 105
+[DEBUG][2014-04-05 22:00:16]>> Host: 127.0.0.1:7057
+[DEBUG][2014-04-05 22:00:16]>> Connection: Keep-Alive
+[DEBUG][2014-04-05 22:00:16] >> "{"desiredCapabilities":{"platform":"ANY","browserName":"firefox","version":""},"requiredCapabilities":{}}"
+[DEBUG][2014-04-05 22:00:16] << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG][2014-04-05 22:00:16] << "content-type: application/json; charset=UTF-8[\r][\n]"
+[DEBUG][2014-04-05 22:00:16] << "connection: close[\r][\n]"
+[DEBUG][2014-04-05 22:00:16] << "content-length: 454[\r][\n]"
+[DEBUG][2014-04-05 22:00:16] << "server: httpd.js[\r][\n]"
+[DEBUG][2014-04-05 22:00:16] << "date: Sat, 05 Apr 2014 14:00:16 GMT[\r][\n]"
+[DEBUG][2014-04-05 22:00:16] << "[\r][\n]"
+[DEBUG][2014-04-05 22:00:16]Receiving response: HTTP/1.1 200 OK
+[DEBUG][2014-04-05 22:00:16]<< HTTP/1.1 200 OK
+[DEBUG][2014-04-05 22:00:16]<< content-type: application/json; charset=UTF-8
+[DEBUG][2014-04-05 22:00:16]<< connection: close
+[DEBUG][2014-04-05 22:00:16]<< content-length: 454
+[DEBUG][2014-04-05 22:00:16]<< server: httpd.js
+[DEBUG][2014-04-05 22:00:16]<< date: Sat, 05 Apr 2014 14:00:16 GMT
+[DEBUG][2014-04-05 22:00:16] << "{"name":"newSession","sessionId":"4c431e72-e6e4-cf47-a546-86ac6c7ad5fe","status":0,"value":{"cssSelectorsEnabled":true,"browserName":"firefox","handlesAlerts":true,"javascriptEnabled":true,"nativeEvents":false,"platform":"Darwin","rotatable":false,"takesScreenshot":true,"version":"23.0.1","webStorageEnabled":true,"applicationCacheEnabled":true,"databaseEnabled":true,"locationContextEnabled":true,"browserConnectionEnabled":true,"acceptSslCerts":true}}"
+[DEBUG][2014-04-05 22:00:16]Connection 0.0.0.0:55669<->127.0.0.1:7057 shut down
+[DEBUG][2014-04-05 22:00:16]Released connection is not reusable.
+[DEBUG][2014-04-05 22:00:16]Releasing connection [{}->http://127.0.0.1:7057][null]
+[DEBUG][2014-04-05 22:00:16]Connection 0.0.0.0:55669<->127.0.0.1:7057 closed
+[DEBUG][2014-04-05 22:00:16]Notifying no-one, there are no waiting threads
+[DEBUG][2014-04-05 22:00:16]Get connection: {}->http://127.0.0.1:7057, timeout = 120000
+[DEBUG][2014-04-05 22:00:16][{}->http://127.0.0.1:7057] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+[DEBUG][2014-04-05 22:00:16]No free connections [{}->http://127.0.0.1:7057][null]
+[DEBUG][2014-04-05 22:00:16]Available capacity: 2000 out of 2000 [{}->http://127.0.0.1:7057][null]
+[DEBUG][2014-04-05 22:00:16]Creating new connection [{}->http://127.0.0.1:7057]
+[DEBUG][2014-04-05 22:00:16]Connecting to 127.0.0.1:7057
+[DEBUG][2014-04-05 22:00:16]CookieSpec selected: best-match
+[DEBUG][2014-04-05 22:00:16]Auth cache not set in the context
+[DEBUG][2014-04-05 22:00:16]Target auth state: UNCHALLENGED
+[DEBUG][2014-04-05 22:00:16]Proxy auth state: UNCHALLENGED
+[DEBUG][2014-04-05 22:00:16]Attempt 1 to execute request
+[DEBUG][2014-04-05 22:00:16]Sending request: POST /hub/session/4c431e72-e6e4-cf47-a546-86ac6c7ad5fe/url HTTP/1.1
+[DEBUG][2014-04-05 22:00:16] >> "POST /hub/session/4c431e72-e6e4-cf47-a546-86ac6c7ad5fe/url HTTP/1.1[\r][\n]"
+[DEBUG][2014-04-05 22:00:16] >> "Accept: application/json, image/png[\r][\n]"
+[DEBUG][2014-04-05 22:00:16] >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+[DEBUG][2014-04-05 22:00:16] >> "Content-Length: 54[\r][\n]"
+[DEBUG][2014-04-05 22:00:16] >> "Host: 127.0.0.1:7057[\r][\n]"
+[DEBUG][2014-04-05 22:00:16] >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG][2014-04-05 22:00:16] >> "[\r][\n]"
+[DEBUG][2014-04-05 22:00:16]>> POST /hub/session/4c431e72-e6e4-cf47-a546-86ac6c7ad5fe/url HTTP/1.1
+[DEBUG][2014-04-05 22:00:16]>> Accept: application/json, image/png
+[DEBUG][2014-04-05 22:00:16]>> Content-Type: application/json; charset=utf-8
+[DEBUG][2014-04-05 22:00:16]>> Content-Length: 54
+[DEBUG][2014-04-05 22:00:16]>> Host: 127.0.0.1:7057
+[DEBUG][2014-04-05 22:00:16]>> Connection: Keep-Alive
+[DEBUG][2014-04-05 22:00:16] >> "{"url":"https://github.com/zhangting85/simpleWebtest"}"
+[DEBUG][2014-04-05 22:00:30] << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG][2014-04-05 22:00:30] << "content-type: application/json; charset=UTF-8[\r][\n]"
+[DEBUG][2014-04-05 22:00:30] << "connection: close[\r][\n]"
+[DEBUG][2014-04-05 22:00:30] << "content-length: 87[\r][\n]"
+[DEBUG][2014-04-05 22:00:30] << "server: httpd.js[\r][\n]"
+[DEBUG][2014-04-05 22:00:30] << "date: Sat, 05 Apr 2014 14:00:30 GMT[\r][\n]"
+[DEBUG][2014-04-05 22:00:30] << "[\r][\n]"
+[DEBUG][2014-04-05 22:00:30]Receiving response: HTTP/1.1 200 OK
+[DEBUG][2014-04-05 22:00:30]<< HTTP/1.1 200 OK
+[DEBUG][2014-04-05 22:00:30]<< content-type: application/json; charset=UTF-8
+[DEBUG][2014-04-05 22:00:30]<< connection: close
+[DEBUG][2014-04-05 22:00:30]<< content-length: 87
+[DEBUG][2014-04-05 22:00:30]<< server: httpd.js
+[DEBUG][2014-04-05 22:00:30]<< date: Sat, 05 Apr 2014 14:00:30 GMT
+[DEBUG][2014-04-05 22:00:30] << "{"name":"get","sessionId":"4c431e72-e6e4-cf47-a546-86ac6c7ad5fe","status":0,"value":""}"
+[DEBUG][2014-04-05 22:00:30]Connection 0.0.0.0:55670<->127.0.0.1:7057 shut down
+[DEBUG][2014-04-05 22:00:30]Released connection is not reusable.
+[DEBUG][2014-04-05 22:00:30]Releasing connection [{}->http://127.0.0.1:7057][null]
+[DEBUG][2014-04-05 22:00:30]Connection 0.0.0.0:55670<->127.0.0.1:7057 closed
+[DEBUG][2014-04-05 22:00:30]Notifying no-one, there are no waiting threads
+[DEBUG][2014-04-05 22:00:30]End logging2
+[DEBUG][2014-04-05 22:24:56]Get connection: {}->http://127.0.0.1:7060, timeout = 120000
+[DEBUG][2014-04-05 22:24:56][{}->http://127.0.0.1:7060] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+[DEBUG][2014-04-05 22:24:56]No free connections [{}->http://127.0.0.1:7060][null]
+[DEBUG][2014-04-05 22:24:56]Available capacity: 2000 out of 2000 [{}->http://127.0.0.1:7060][null]
+[DEBUG][2014-04-05 22:24:56]Creating new connection [{}->http://127.0.0.1:7060]
+[DEBUG][2014-04-05 22:24:56]Connecting to 127.0.0.1:7060
+[DEBUG][2014-04-05 22:24:56]CookieSpec selected: best-match
+[DEBUG][2014-04-05 22:24:56]Auth cache not set in the context
+[DEBUG][2014-04-05 22:24:56]Target auth state: UNCHALLENGED
+[DEBUG][2014-04-05 22:24:56]Proxy auth state: UNCHALLENGED
+[DEBUG][2014-04-05 22:24:56]Attempt 1 to execute request
+[DEBUG][2014-04-05 22:24:56]Sending request: POST /hub/session HTTP/1.1
+[DEBUG][2014-04-05 22:24:56] >> "POST /hub/session HTTP/1.1[\r][\n]"
+[DEBUG][2014-04-05 22:24:56] >> "Accept: application/json, image/png[\r][\n]"
+[DEBUG][2014-04-05 22:24:56] >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+[DEBUG][2014-04-05 22:24:56] >> "Content-Length: 105[\r][\n]"
+[DEBUG][2014-04-05 22:24:56] >> "Host: 127.0.0.1:7060[\r][\n]"
+[DEBUG][2014-04-05 22:24:56] >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG][2014-04-05 22:24:56] >> "[\r][\n]"
+[DEBUG][2014-04-05 22:24:56]>> POST /hub/session HTTP/1.1
+[DEBUG][2014-04-05 22:24:56]>> Accept: application/json, image/png
+[DEBUG][2014-04-05 22:24:56]>> Content-Type: application/json; charset=utf-8
+[DEBUG][2014-04-05 22:24:56]>> Content-Length: 105
+[DEBUG][2014-04-05 22:24:56]>> Host: 127.0.0.1:7060
+[DEBUG][2014-04-05 22:24:56]>> Connection: Keep-Alive
+[DEBUG][2014-04-05 22:24:56] >> "{"desiredCapabilities":{"platform":"ANY","browserName":"firefox","version":""},"requiredCapabilities":{}}"
+[DEBUG][2014-04-05 22:24:56] << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG][2014-04-05 22:24:56] << "content-type: application/json; charset=UTF-8[\r][\n]"
+[DEBUG][2014-04-05 22:24:56] << "connection: close[\r][\n]"
+[DEBUG][2014-04-05 22:24:56] << "content-length: 454[\r][\n]"
+[DEBUG][2014-04-05 22:24:56] << "server: httpd.js[\r][\n]"
+[DEBUG][2014-04-05 22:24:56] << "date: Sat, 05 Apr 2014 14:24:56 GMT[\r][\n]"
+[DEBUG][2014-04-05 22:24:56] << "[\r][\n]"
+[DEBUG][2014-04-05 22:24:56]Receiving response: HTTP/1.1 200 OK
+[DEBUG][2014-04-05 22:24:56]<< HTTP/1.1 200 OK
+[DEBUG][2014-04-05 22:24:56]<< content-type: application/json; charset=UTF-8
+[DEBUG][2014-04-05 22:24:56]<< connection: close
+[DEBUG][2014-04-05 22:24:56]<< content-length: 454
+[DEBUG][2014-04-05 22:24:56]<< server: httpd.js
+[DEBUG][2014-04-05 22:24:56]<< date: Sat, 05 Apr 2014 14:24:56 GMT
+[DEBUG][2014-04-05 22:24:56] << "{"name":"newSession","sessionId":"a7bfdc1a-e35a-6447-a097-9b2410a08c4a","status":0,"value":{"cssSelectorsEnabled":true,"browserName":"firefox","handlesAlerts":true,"javascriptEnabled":true,"nativeEvents":false,"platform":"Darwin","rotatable":false,"takesScreenshot":true,"version":"23.0.1","webStorageEnabled":true,"applicationCacheEnabled":true,"databaseEnabled":true,"locationContextEnabled":true,"browserConnectionEnabled":true,"acceptSslCerts":true}}"
+[DEBUG][2014-04-05 22:24:56]Connection 0.0.0.0:56714<->127.0.0.1:7060 shut down
+[DEBUG][2014-04-05 22:24:56]Released connection is not reusable.
+[DEBUG][2014-04-05 22:24:56]Releasing connection [{}->http://127.0.0.1:7060][null]
+[DEBUG][2014-04-05 22:24:56]Connection 0.0.0.0:56714<->127.0.0.1:7060 closed
+[DEBUG][2014-04-05 22:24:56]Notifying no-one, there are no waiting threads
+[DEBUG][2014-04-05 22:24:56]start
+[DEBUG][2014-04-05 22:31:36]Get connection: {}->http://127.0.0.1:7061, timeout = 120000
+[DEBUG][2014-04-05 22:31:36][{}->http://127.0.0.1:7061] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+[DEBUG][2014-04-05 22:31:36]No free connections [{}->http://127.0.0.1:7061][null]
+[DEBUG][2014-04-05 22:31:36]Available capacity: 2000 out of 2000 [{}->http://127.0.0.1:7061][null]
+[DEBUG][2014-04-05 22:31:36]Creating new connection [{}->http://127.0.0.1:7061]
+[DEBUG][2014-04-05 22:31:36]Connecting to 127.0.0.1:7061
+[DEBUG][2014-04-05 22:31:36]CookieSpec selected: best-match
+[DEBUG][2014-04-05 22:31:36]Auth cache not set in the context
+[DEBUG][2014-04-05 22:31:36]Target auth state: UNCHALLENGED
+[DEBUG][2014-04-05 22:31:36]Proxy auth state: UNCHALLENGED
+[DEBUG][2014-04-05 22:31:36]Attempt 1 to execute request
+[DEBUG][2014-04-05 22:31:36]Sending request: POST /hub/session HTTP/1.1
+[DEBUG][2014-04-05 22:31:36] >> "POST /hub/session HTTP/1.1[\r][\n]"
+[DEBUG][2014-04-05 22:31:36] >> "Accept: application/json, image/png[\r][\n]"
+[DEBUG][2014-04-05 22:31:36] >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+[DEBUG][2014-04-05 22:31:36] >> "Content-Length: 105[\r][\n]"
+[DEBUG][2014-04-05 22:31:36] >> "Host: 127.0.0.1:7061[\r][\n]"
+[DEBUG][2014-04-05 22:31:36] >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG][2014-04-05 22:31:36] >> "[\r][\n]"
+[DEBUG][2014-04-05 22:31:36]>> POST /hub/session HTTP/1.1
+[DEBUG][2014-04-05 22:31:36]>> Accept: application/json, image/png
+[DEBUG][2014-04-05 22:31:36]>> Content-Type: application/json; charset=utf-8
+[DEBUG][2014-04-05 22:31:36]>> Content-Length: 105
+[DEBUG][2014-04-05 22:31:36]>> Host: 127.0.0.1:7061
+[DEBUG][2014-04-05 22:31:36]>> Connection: Keep-Alive
+[DEBUG][2014-04-05 22:31:36] >> "{"desiredCapabilities":{"platform":"ANY","browserName":"firefox","version":""},"requiredCapabilities":{}}"
+[DEBUG][2014-04-05 22:31:36] << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG][2014-04-05 22:31:36] << "content-type: application/json; charset=UTF-8[\r][\n]"
+[DEBUG][2014-04-05 22:31:36] << "connection: close[\r][\n]"
+[DEBUG][2014-04-05 22:31:36] << "content-length: 454[\r][\n]"
+[DEBUG][2014-04-05 22:31:36] << "server: httpd.js[\r][\n]"
+[DEBUG][2014-04-05 22:31:36] << "date: Sat, 05 Apr 2014 14:31:36 GMT[\r][\n]"
+[DEBUG][2014-04-05 22:31:36] << "[\r][\n]"
+[DEBUG][2014-04-05 22:31:36]Receiving response: HTTP/1.1 200 OK
+[DEBUG][2014-04-05 22:31:36]<< HTTP/1.1 200 OK
+[DEBUG][2014-04-05 22:31:36]<< content-type: application/json; charset=UTF-8
+[DEBUG][2014-04-05 22:31:36]<< connection: close
+[DEBUG][2014-04-05 22:31:36]<< content-length: 454
+[DEBUG][2014-04-05 22:31:36]<< server: httpd.js
+[DEBUG][2014-04-05 22:31:36]<< date: Sat, 05 Apr 2014 14:31:36 GMT
+[DEBUG][2014-04-05 22:31:36] << "{"name":"newSession","sessionId":"536681ab-683c-0c48-8d00-ab18a9ecf13e","status":0,"value":{"cssSelectorsEnabled":true,"browserName":"firefox","handlesAlerts":true,"javascriptEnabled":true,"nativeEvents":false,"platform":"Darwin","rotatable":false,"takesScreenshot":true,"version":"23.0.1","webStorageEnabled":true,"applicationCacheEnabled":true,"databaseEnabled":true,"locationContextEnabled":true,"browserConnectionEnabled":true,"acceptSslCerts":true}}"
+[DEBUG][2014-04-05 22:31:36]Connection 0.0.0.0:57934<->127.0.0.1:7061 shut down
+[DEBUG][2014-04-05 22:31:36]Released connection is not reusable.
+[DEBUG][2014-04-05 22:31:36]Releasing connection [{}->http://127.0.0.1:7061][null]
+[DEBUG][2014-04-05 22:31:36]Connection 0.0.0.0:57934<->127.0.0.1:7061 closed
+[DEBUG][2014-04-05 22:31:36]Notifying no-one, there are no waiting threads
+[DEBUG][2014-04-05 22:31:37]start
+[DEBUG][2014-04-05 22:31:37]Get connection: {}->http://127.0.0.1:7061, timeout = 120000
+[DEBUG][2014-04-05 22:31:37][{}->http://127.0.0.1:7061] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+[DEBUG][2014-04-05 22:31:37]No free connections [{}->http://127.0.0.1:7061][null]
+[DEBUG][2014-04-05 22:31:37]Available capacity: 2000 out of 2000 [{}->http://127.0.0.1:7061][null]
+[DEBUG][2014-04-05 22:31:37]Creating new connection [{}->http://127.0.0.1:7061]
+[DEBUG][2014-04-05 22:31:37]Connecting to 127.0.0.1:7061
+[DEBUG][2014-04-05 22:31:37]CookieSpec selected: best-match
+[DEBUG][2014-04-05 22:31:37]Auth cache not set in the context
+[DEBUG][2014-04-05 22:31:37]Target auth state: UNCHALLENGED
+[DEBUG][2014-04-05 22:31:37]Proxy auth state: UNCHALLENGED
+[DEBUG][2014-04-05 22:31:37]Attempt 1 to execute request
+[DEBUG][2014-04-05 22:31:37]Sending request: POST /hub/session/536681ab-683c-0c48-8d00-ab18a9ecf13e/url HTTP/1.1
+[DEBUG][2014-04-05 22:31:37] >> "POST /hub/session/536681ab-683c-0c48-8d00-ab18a9ecf13e/url HTTP/1.1[\r][\n]"
+[DEBUG][2014-04-05 22:31:37] >> "Accept: application/json, image/png[\r][\n]"
+[DEBUG][2014-04-05 22:31:37] >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+[DEBUG][2014-04-05 22:31:37] >> "Content-Length: 27[\r][\n]"
+[DEBUG][2014-04-05 22:31:37] >> "Host: 127.0.0.1:7061[\r][\n]"
+[DEBUG][2014-04-05 22:31:37] >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG][2014-04-05 22:31:37] >> "[\r][\n]"
+[DEBUG][2014-04-05 22:31:37]>> POST /hub/session/536681ab-683c-0c48-8d00-ab18a9ecf13e/url HTTP/1.1
+[DEBUG][2014-04-05 22:31:37]>> Accept: application/json, image/png
+[DEBUG][2014-04-05 22:31:37]>> Content-Type: application/json; charset=utf-8
+[DEBUG][2014-04-05 22:31:37]>> Content-Length: 27
+[DEBUG][2014-04-05 22:31:37]>> Host: 127.0.0.1:7061
+[DEBUG][2014-04-05 22:31:37]>> Connection: Keep-Alive
+[DEBUG][2014-04-05 22:31:37] >> "{"url":"http://www.jd.com"}"
+[DEBUG][2014-04-05 22:31:46] << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG][2014-04-05 22:31:46] << "content-type: application/json; charset=UTF-8[\r][\n]"
+[DEBUG][2014-04-05 22:31:46] << "connection: close[\r][\n]"
+[DEBUG][2014-04-05 22:31:46] << "content-length: 87[\r][\n]"
+[DEBUG][2014-04-05 22:31:46] << "server: httpd.js[\r][\n]"
+[DEBUG][2014-04-05 22:31:46] << "date: Sat, 05 Apr 2014 14:31:46 GMT[\r][\n]"
+[DEBUG][2014-04-05 22:31:46] << "[\r][\n]"
+[DEBUG][2014-04-05 22:31:46]Receiving response: HTTP/1.1 200 OK
+[DEBUG][2014-04-05 22:31:46]<< HTTP/1.1 200 OK
+[DEBUG][2014-04-05 22:31:46]<< content-type: application/json; charset=UTF-8
+[DEBUG][2014-04-05 22:31:46]<< connection: close
+[DEBUG][2014-04-05 22:31:46]<< content-length: 87
+[DEBUG][2014-04-05 22:31:46]<< server: httpd.js
+[DEBUG][2014-04-05 22:31:46]<< date: Sat, 05 Apr 2014 14:31:46 GMT
+[DEBUG][2014-04-05 22:31:46] << "{"name":"get","sessionId":"536681ab-683c-0c48-8d00-ab18a9ecf13e","status":0,"value":""}"
+[DEBUG][2014-04-05 22:31:46]Connection 0.0.0.0:57935<->127.0.0.1:7061 shut down
+[DEBUG][2014-04-05 22:31:46]Released connection is not reusable.
+[DEBUG][2014-04-05 22:31:46]Releasing connection [{}->http://127.0.0.1:7061][null]
+[DEBUG][2014-04-05 22:31:46]Connection 0.0.0.0:57935<->127.0.0.1:7061 closed
+[DEBUG][2014-04-05 22:31:46]Notifying no-one, there are no waiting threads
+[INFO][2014-04-05 22:31:47]WebDriver navigating to:'http://www.jd.com'
+[DEBUG][2014-04-05 22:31:47]Get connection: {}->http://127.0.0.1:7061, timeout = 120000
+[DEBUG][2014-04-05 22:31:47][{}->http://127.0.0.1:7061] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+[DEBUG][2014-04-05 22:31:47]No free connections [{}->http://127.0.0.1:7061][null]
+[DEBUG][2014-04-05 22:31:47]Available capacity: 2000 out of 2000 [{}->http://127.0.0.1:7061][null]
+[DEBUG][2014-04-05 22:31:47]Creating new connection [{}->http://127.0.0.1:7061]
+[DEBUG][2014-04-05 22:31:47]Connecting to 127.0.0.1:7061
+[DEBUG][2014-04-05 22:31:47]CookieSpec selected: best-match
+[DEBUG][2014-04-05 22:31:47]Auth cache not set in the context
+[DEBUG][2014-04-05 22:31:47]Target auth state: UNCHALLENGED
+[DEBUG][2014-04-05 22:31:47]Proxy auth state: UNCHALLENGED
+[DEBUG][2014-04-05 22:31:47]Attempt 1 to execute request
+[DEBUG][2014-04-05 22:31:47]Sending request: POST /hub/session/536681ab-683c-0c48-8d00-ab18a9ecf13e/element HTTP/1.1
+[DEBUG][2014-04-05 22:31:47] >> "POST /hub/session/536681ab-683c-0c48-8d00-ab18a9ecf13e/element HTTP/1.1[\r][\n]"
+[DEBUG][2014-04-05 22:31:47] >> "Accept: application/json, image/png[\r][\n]"
+[DEBUG][2014-04-05 22:31:47] >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+[DEBUG][2014-04-05 22:31:47] >> "Content-Length: 28[\r][\n]"
+[DEBUG][2014-04-05 22:31:47] >> "Host: 127.0.0.1:7061[\r][\n]"
+[DEBUG][2014-04-05 22:31:47] >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG][2014-04-05 22:31:47] >> "[\r][\n]"
+[DEBUG][2014-04-05 22:31:47]>> POST /hub/session/536681ab-683c-0c48-8d00-ab18a9ecf13e/element HTTP/1.1
+[DEBUG][2014-04-05 22:31:47]>> Accept: application/json, image/png
+[DEBUG][2014-04-05 22:31:47]>> Content-Type: application/json; charset=utf-8
+[DEBUG][2014-04-05 22:31:47]>> Content-Length: 28
+[DEBUG][2014-04-05 22:31:47]>> Host: 127.0.0.1:7061
+[DEBUG][2014-04-05 22:31:47]>> Connection: Keep-Alive
+[DEBUG][2014-04-05 22:31:47] >> "{"using":"id","value":"key"}"
+[DEBUG][2014-04-05 22:31:47] << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG][2014-04-05 22:31:47] << "content-type: application/json; charset=UTF-8[\r][\n]"
+[DEBUG][2014-04-05 22:31:47] << "connection: close[\r][\n]"
+[DEBUG][2014-04-05 22:31:47] << "content-length: 145[\r][\n]"
+[DEBUG][2014-04-05 22:31:47] << "server: httpd.js[\r][\n]"
+[DEBUG][2014-04-05 22:31:47] << "date: Sat, 05 Apr 2014 14:31:47 GMT[\r][\n]"
+[DEBUG][2014-04-05 22:31:47] << "[\r][\n]"
+[DEBUG][2014-04-05 22:31:47]Receiving response: HTTP/1.1 200 OK
+[DEBUG][2014-04-05 22:31:47]<< HTTP/1.1 200 OK
+[DEBUG][2014-04-05 22:31:47]<< content-type: application/json; charset=UTF-8
+[DEBUG][2014-04-05 22:31:47]<< connection: close
+[DEBUG][2014-04-05 22:31:47]<< content-length: 145
+[DEBUG][2014-04-05 22:31:47]<< server: httpd.js
+[DEBUG][2014-04-05 22:31:47]<< date: Sat, 05 Apr 2014 14:31:47 GMT
+[DEBUG][2014-04-05 22:31:47] << "{"name":"findElement","sessionId":"536681ab-683c-0c48-8d00-ab18a9ecf13e","status":0,"value":{"ELEMENT":"{26bbf0fb-4e1f-854c-9927-cefa5396e83e}"}}"
+[DEBUG][2014-04-05 22:31:47]Connection 0.0.0.0:58016<->127.0.0.1:7061 shut down
+[DEBUG][2014-04-05 22:31:47]Released connection is not reusable.
+[DEBUG][2014-04-05 22:31:47]Releasing connection [{}->http://127.0.0.1:7061][null]
+[DEBUG][2014-04-05 22:31:47]Connection 0.0.0.0:58016<->127.0.0.1:7061 closed
+[DEBUG][2014-04-05 22:31:47]Notifying no-one, there are no waiting threads
+[DEBUG][2014-04-05 22:31:47]Get connection: {}->http://127.0.0.1:7061, timeout = 120000
+[DEBUG][2014-04-05 22:31:47][{}->http://127.0.0.1:7061] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+[DEBUG][2014-04-05 22:31:47]No free connections [{}->http://127.0.0.1:7061][null]
+[DEBUG][2014-04-05 22:31:47]Available capacity: 2000 out of 2000 [{}->http://127.0.0.1:7061][null]
+[DEBUG][2014-04-05 22:31:47]Creating new connection [{}->http://127.0.0.1:7061]
+[DEBUG][2014-04-05 22:31:47]Connecting to 127.0.0.1:7061
+[DEBUG][2014-04-05 22:31:47]CookieSpec selected: best-match
+[DEBUG][2014-04-05 22:31:47]Auth cache not set in the context
+[DEBUG][2014-04-05 22:31:47]Target auth state: UNCHALLENGED
+[DEBUG][2014-04-05 22:31:47]Proxy auth state: UNCHALLENGED
+[DEBUG][2014-04-05 22:31:47]Attempt 1 to execute request
+[DEBUG][2014-04-05 22:31:47]Sending request: POST /hub/session/536681ab-683c-0c48-8d00-ab18a9ecf13e/element/%7B26bbf0fb-4e1f-854c-9927-cefa5396e83e%7D/value HTTP/1.1
+[DEBUG][2014-04-05 22:31:47] >> "POST /hub/session/536681ab-683c-0c48-8d00-ab18a9ecf13e/element/%7B26bbf0fb-4e1f-854c-9927-cefa5396e83e%7D/value HTTP/1.1[\r][\n]"
+[DEBUG][2014-04-05 22:31:47] >> "Accept: application/json, image/png[\r][\n]"
+[DEBUG][2014-04-05 22:31:47] >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+[DEBUG][2014-04-05 22:31:47] >> "Content-Length: 66[\r][\n]"
+[DEBUG][2014-04-05 22:31:47] >> "Host: 127.0.0.1:7061[\r][\n]"
+[DEBUG][2014-04-05 22:31:47] >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG][2014-04-05 22:31:47] >> "[\r][\n]"
+[DEBUG][2014-04-05 22:31:47]>> POST /hub/session/536681ab-683c-0c48-8d00-ab18a9ecf13e/element/%7B26bbf0fb-4e1f-854c-9927-cefa5396e83e%7D/value HTTP/1.1
+[DEBUG][2014-04-05 22:31:47]>> Accept: application/json, image/png
+[DEBUG][2014-04-05 22:31:47]>> Content-Type: application/json; charset=utf-8
+[DEBUG][2014-04-05 22:31:47]>> Content-Length: 66
+[DEBUG][2014-04-05 22:31:47]>> Host: 127.0.0.1:7061
+[DEBUG][2014-04-05 22:31:47]>> Connection: Keep-Alive
+[DEBUG][2014-04-05 22:31:47] >> "{"id":"{26bbf0fb-4e1f-854c-9927-cefa5396e83e}","value":["GitHub"]}"
+[DEBUG][2014-04-05 22:31:47] << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG][2014-04-05 22:31:47] << "content-type: application/json; charset=UTF-8[\r][\n]"
+[DEBUG][2014-04-05 22:31:47] << "connection: close[\r][\n]"
+[DEBUG][2014-04-05 22:31:47] << "content-length: 101[\r][\n]"
+[DEBUG][2014-04-05 22:31:47] << "server: httpd.js[\r][\n]"
+[DEBUG][2014-04-05 22:31:47] << "date: Sat, 05 Apr 2014 14:31:47 GMT[\r][\n]"
+[DEBUG][2014-04-05 22:31:47] << "[\r][\n]"
+[DEBUG][2014-04-05 22:31:47]Receiving response: HTTP/1.1 200 OK
+[DEBUG][2014-04-05 22:31:47]<< HTTP/1.1 200 OK
+[DEBUG][2014-04-05 22:31:47]<< content-type: application/json; charset=UTF-8
+[DEBUG][2014-04-05 22:31:47]<< connection: close
+[DEBUG][2014-04-05 22:31:47]<< content-length: 101
+[DEBUG][2014-04-05 22:31:47]<< server: httpd.js
+[DEBUG][2014-04-05 22:31:47]<< date: Sat, 05 Apr 2014 14:31:47 GMT
+[DEBUG][2014-04-05 22:31:47] << "{"name":"sendKeysToElement","sessionId":"536681ab-683c-0c48-8d00-ab18a9ecf13e","status":0,"value":""}"
+[DEBUG][2014-04-05 22:31:47]Connection 0.0.0.0:58022<->127.0.0.1:7061 shut down
+[DEBUG][2014-04-05 22:31:47]Released connection is not reusable.
+[DEBUG][2014-04-05 22:31:47]Releasing connection [{}->http://127.0.0.1:7061][null]
+[DEBUG][2014-04-05 22:31:47]Connection 0.0.0.0:58022<->127.0.0.1:7061 closed
+[DEBUG][2014-04-05 22:31:47]Notifying no-one, there are no waiting threads
+[DEBUG][2014-04-05 22:31:47]Get connection: {}->http://127.0.0.1:7061, timeout = 120000
+[DEBUG][2014-04-05 22:31:47][{}->http://127.0.0.1:7061] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+[DEBUG][2014-04-05 22:31:47]No free connections [{}->http://127.0.0.1:7061][null]
+[DEBUG][2014-04-05 22:31:47]Available capacity: 2000 out of 2000 [{}->http://127.0.0.1:7061][null]
+[DEBUG][2014-04-05 22:31:47]Creating new connection [{}->http://127.0.0.1:7061]
+[DEBUG][2014-04-05 22:31:47]Connecting to 127.0.0.1:7061
+[DEBUG][2014-04-05 22:31:47]CookieSpec selected: best-match
+[DEBUG][2014-04-05 22:31:47]Auth cache not set in the context
+[DEBUG][2014-04-05 22:31:47]Target auth state: UNCHALLENGED
+[DEBUG][2014-04-05 22:31:47]Proxy auth state: UNCHALLENGED
+[DEBUG][2014-04-05 22:31:47]Attempt 1 to execute request
+[DEBUG][2014-04-05 22:31:47]Sending request: POST /hub/session/536681ab-683c-0c48-8d00-ab18a9ecf13e/element HTTP/1.1
+[DEBUG][2014-04-05 22:31:47] >> "POST /hub/session/536681ab-683c-0c48-8d00-ab18a9ecf13e/element HTTP/1.1[\r][\n]"
+[DEBUG][2014-04-05 22:31:47] >> "Accept: application/json, image/png[\r][\n]"
+[DEBUG][2014-04-05 22:31:47] >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+[DEBUG][2014-04-05 22:31:47] >> "Content-Length: 52[\r][\n]"
+[DEBUG][2014-04-05 22:31:47] >> "Host: 127.0.0.1:7061[\r][\n]"
+[DEBUG][2014-04-05 22:31:47] >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG][2014-04-05 22:31:47] >> "[\r][\n]"
+[DEBUG][2014-04-05 22:31:47]>> POST /hub/session/536681ab-683c-0c48-8d00-ab18a9ecf13e/element HTTP/1.1
+[DEBUG][2014-04-05 22:31:47]>> Accept: application/json, image/png
+[DEBUG][2014-04-05 22:31:47]>> Content-Type: application/json; charset=utf-8
+[DEBUG][2014-04-05 22:31:47]>> Content-Length: 52
+[DEBUG][2014-04-05 22:31:47]>> Host: 127.0.0.1:7061
+[DEBUG][2014-04-05 22:31:47]>> Connection: Keep-Alive
+[DEBUG][2014-04-05 22:31:47] >> "{"using":"xpath","value":"//input[@value='[0xe6][0x90][0x9c][0xe7][0xb4][0xa2]']"}"
+[DEBUG][2014-04-05 22:31:48] << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG][2014-04-05 22:31:48] << "content-type: application/json; charset=UTF-8[\r][\n]"
+[DEBUG][2014-04-05 22:31:48] << "connection: close[\r][\n]"
+[DEBUG][2014-04-05 22:31:48] << "content-length: 145[\r][\n]"
+[DEBUG][2014-04-05 22:31:48] << "server: httpd.js[\r][\n]"
+[DEBUG][2014-04-05 22:31:48] << "date: Sat, 05 Apr 2014 14:31:48 GMT[\r][\n]"
+[DEBUG][2014-04-05 22:31:48] << "[\r][\n]"
+[DEBUG][2014-04-05 22:31:48]Receiving response: HTTP/1.1 200 OK
+[DEBUG][2014-04-05 22:31:48]<< HTTP/1.1 200 OK
+[DEBUG][2014-04-05 22:31:48]<< content-type: application/json; charset=UTF-8
+[DEBUG][2014-04-05 22:31:48]<< connection: close
+[DEBUG][2014-04-05 22:31:48]<< content-length: 145
+[DEBUG][2014-04-05 22:31:48]<< server: httpd.js
+[DEBUG][2014-04-05 22:31:48]<< date: Sat, 05 Apr 2014 14:31:48 GMT
+[DEBUG][2014-04-05 22:31:48] << "{"name":"findElement","sessionId":"536681ab-683c-0c48-8d00-ab18a9ecf13e","status":0,"value":{"ELEMENT":"{6c8ace02-11ea-0f4d-b13f-871bc1799473}"}}"
+[DEBUG][2014-04-05 22:31:48]Connection 0.0.0.0:58029<->127.0.0.1:7061 shut down
+[DEBUG][2014-04-05 22:31:48]Released connection is not reusable.
+[DEBUG][2014-04-05 22:31:48]Releasing connection [{}->http://127.0.0.1:7061][null]
+[DEBUG][2014-04-05 22:31:48]Connection 0.0.0.0:58029<->127.0.0.1:7061 closed
+[DEBUG][2014-04-05 22:31:48]Notifying no-one, there are no waiting threads
+[DEBUG][2014-04-05 22:31:48]Get connection: {}->http://127.0.0.1:7061, timeout = 120000
+[DEBUG][2014-04-05 22:31:48][{}->http://127.0.0.1:7061] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+[DEBUG][2014-04-05 22:31:48]No free connections [{}->http://127.0.0.1:7061][null]
+[DEBUG][2014-04-05 22:31:48]Available capacity: 2000 out of 2000 [{}->http://127.0.0.1:7061][null]
+[DEBUG][2014-04-05 22:31:48]Creating new connection [{}->http://127.0.0.1:7061]
+[DEBUG][2014-04-05 22:31:48]Connecting to 127.0.0.1:7061
+[DEBUG][2014-04-05 22:31:48]CookieSpec selected: best-match
+[DEBUG][2014-04-05 22:31:48]Auth cache not set in the context
+[DEBUG][2014-04-05 22:31:48]Target auth state: UNCHALLENGED
+[DEBUG][2014-04-05 22:31:48]Proxy auth state: UNCHALLENGED
+[DEBUG][2014-04-05 22:31:48]Attempt 1 to execute request
+[DEBUG][2014-04-05 22:31:48]Sending request: POST /hub/session/536681ab-683c-0c48-8d00-ab18a9ecf13e/element/%7B6c8ace02-11ea-0f4d-b13f-871bc1799473%7D/click HTTP/1.1
+[DEBUG][2014-04-05 22:31:48] >> "POST /hub/session/536681ab-683c-0c48-8d00-ab18a9ecf13e/element/%7B6c8ace02-11ea-0f4d-b13f-871bc1799473%7D/click HTTP/1.1[\r][\n]"
+[DEBUG][2014-04-05 22:31:48] >> "Accept: application/json, image/png[\r][\n]"
+[DEBUG][2014-04-05 22:31:48] >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+[DEBUG][2014-04-05 22:31:48] >> "Content-Length: 47[\r][\n]"
+[DEBUG][2014-04-05 22:31:48] >> "Host: 127.0.0.1:7061[\r][\n]"
+[DEBUG][2014-04-05 22:31:48] >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG][2014-04-05 22:31:48] >> "[\r][\n]"
+[DEBUG][2014-04-05 22:31:48]>> POST /hub/session/536681ab-683c-0c48-8d00-ab18a9ecf13e/element/%7B6c8ace02-11ea-0f4d-b13f-871bc1799473%7D/click HTTP/1.1
+[DEBUG][2014-04-05 22:31:48]>> Accept: application/json, image/png
+[DEBUG][2014-04-05 22:31:48]>> Content-Type: application/json; charset=utf-8
+[DEBUG][2014-04-05 22:31:48]>> Content-Length: 47
+[DEBUG][2014-04-05 22:31:48]>> Host: 127.0.0.1:7061
+[DEBUG][2014-04-05 22:31:48]>> Connection: Keep-Alive
+[DEBUG][2014-04-05 22:31:48] >> "{"id":"{6c8ace02-11ea-0f4d-b13f-871bc1799473}"}"
+[DEBUG][2014-04-05 22:31:48] << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG][2014-04-05 22:31:48] << "content-type: application/json; charset=UTF-8[\r][\n]"
+[DEBUG][2014-04-05 22:31:48] << "connection: close[\r][\n]"
+[DEBUG][2014-04-05 22:31:48] << "content-length: 98[\r][\n]"
+[DEBUG][2014-04-05 22:31:48] << "server: httpd.js[\r][\n]"
+[DEBUG][2014-04-05 22:31:48] << "date: Sat, 05 Apr 2014 14:31:48 GMT[\r][\n]"
+[DEBUG][2014-04-05 22:31:48] << "[\r][\n]"
+[DEBUG][2014-04-05 22:31:48]Receiving response: HTTP/1.1 200 OK
+[DEBUG][2014-04-05 22:31:48]<< HTTP/1.1 200 OK
+[DEBUG][2014-04-05 22:31:48]<< content-type: application/json; charset=UTF-8
+[DEBUG][2014-04-05 22:31:48]<< connection: close
+[DEBUG][2014-04-05 22:31:48]<< content-length: 98
+[DEBUG][2014-04-05 22:31:48]<< server: httpd.js
+[DEBUG][2014-04-05 22:31:48]<< date: Sat, 05 Apr 2014 14:31:48 GMT
+[DEBUG][2014-04-05 22:31:48] << "{"name":"clickElement","sessionId":"536681ab-683c-0c48-8d00-ab18a9ecf13e","status":0,"value":"ok"}"
+[DEBUG][2014-04-05 22:31:48]Connection 0.0.0.0:58041<->127.0.0.1:7061 shut down
+[DEBUG][2014-04-05 22:31:48]Released connection is not reusable.
+[DEBUG][2014-04-05 22:31:48]Releasing connection [{}->http://127.0.0.1:7061][null]
+[DEBUG][2014-04-05 22:31:48]Connection 0.0.0.0:58041<->127.0.0.1:7061 closed
+[DEBUG][2014-04-05 22:31:48]Notifying no-one, there are no waiting threads
+[INFO][2014-04-05 22:34:09]WebDriver navigating to:'http://www.jd.com'
+[INFO][2014-04-05 22:38:12]TestCase = TestJDSearch
+[INFO][2014-04-05 22:38:36]WebDriver navigating to:'http://www.jd.com'

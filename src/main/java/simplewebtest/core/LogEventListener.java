@@ -5,9 +5,12 @@ import java.util.concurrent.TimeUnit;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.events.WebDriverEventListener;
+
+import simplewebtest.core.TestCase.DriverManager;
 
 
 /**
@@ -17,94 +20,50 @@ import org.openqa.selenium.support.events.WebDriverEventListener;
  */
 public class LogEventListener implements WebDriverEventListener {
 	private Log log = LogFactory.getLog(this.getClass());
-	@Override
-	public void afterChangeValueOf(WebElement arg0, WebDriver arg1) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void afterClickOn(WebElement arg0, WebDriver driver) {
-		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);//to wait
-	}
-
-	@Override
-	public void afterFindBy(By arg0, WebElement arg1, WebDriver arg2) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void afterNavigateBack(WebDriver arg0) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void afterNavigateForward(WebDriver arg0) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void afterNavigateTo(String url, WebDriver arg1) {
-		log.info("WebDriver navigating to:'"+url+"'");
-		
-	}
-
-	@Override
-	public void afterScript(String arg0, WebDriver arg1) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void beforeChangeValueOf(WebElement arg0, WebDriver arg1) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void beforeClickOn(WebElement arg0, WebDriver arg1) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void beforeFindBy(By arg0, WebElement arg1, WebDriver arg2) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void beforeNavigateBack(WebDriver arg0) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void beforeNavigateForward(WebDriver arg0) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void beforeNavigateTo(String url, WebDriver arg1) {
-		
-		
-	}
-
-	@Override
-	public void beforeScript(String arg0, WebDriver arg1) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void onException(Throwable arg0, WebDriver arg1) {
-		// TODO Auto-generated method stub
-		
-	}
+	 
+	    private By lastFindBy;
+	    private String originalValue;
+	 
+	    public void beforeNavigateTo(String url, WebDriver selenium){
+	        log.info("WebDriver navigating to:'"+url+"'");
+	    }
+	 
+	    public void beforeChangeValueOf(WebElement element, WebDriver selenium){
+	        originalValue = element.getAttribute("value");
+	    }
+	 
+	    public void afterChangeValueOf(WebElement element, WebDriver selenium){
+	        log.info("WebDriver changing value in element found "+lastFindBy+" from '"+originalValue+"' to '"+element.getAttribute("value")+"'");
+	    }
+	 
+	    public void beforeFindBy(By by, WebElement element, WebDriver selenium){
+	    	lastFindBy = by;
+	    	//找东西前等三秒wait 3 second for every find by
+	    	DriverManager.driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+	    }
+	 
+	    public void onException(Throwable error, WebDriver selenium){
+	        if (error.getClass().equals(NoSuchElementException.class)){
+	            log.error("WebDriver error: Element not found "+lastFindBy);
+	        } else {
+	            log.error("WebDriver error:", error);
+	        }
+	    }
+	 
+	    public void beforeNavigateBack(WebDriver selenium){}
+	    public void beforeNavigateForward(WebDriver selenium){}
+	    public void beforeClickOn(WebElement element, WebDriver selenium){}
+	    public void beforeScript(String script, WebDriver selenium){}
+	    public void afterClickOn(WebElement element, WebDriver selenium){
+	    	String locator=element.toString().split("-> ")[1];
+	    	log.info("WebDriver clicking on:'"+locator.substring(0, locator.length()-1)+"'");
+	    }
+	    public void afterFindBy(By by, WebElement element, WebDriver selenium){}
+	    public void afterNavigateBack(WebDriver selenium){}
+	    public void afterNavigateForward(WebDriver selenium){}
+	    public void afterNavigateTo(String url, WebDriver selenium){}
+	    public void afterScript(String script, WebDriver selenium){}
+	 
 
 	
 }

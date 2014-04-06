@@ -15,7 +15,13 @@ http://www.cnblogs.com/sdet/p/3633639.html
 
 selenium从入门到应用 - 3，进阶线性脚本的编写
 
-selenium从入门到应用 - 4，页面对象设计模式和页面模块的实现
+selenium从入门到应用 - 4，页面对象设计模式的实现
+http://www.cnblogs.com/sdet/p/3648530.html
+
+selenium从入门到应用 - 5，页面对象设计模式下的页面模块
+
+selenium从入门到应用 - 6，EventFiringWebDriver和监听器
+
 
 Maven 小技巧之 自动更新你的jar包
 http://www.cnblogs.com/sdet/p/3646235.html

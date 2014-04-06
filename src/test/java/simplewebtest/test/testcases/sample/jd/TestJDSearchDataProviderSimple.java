@@ -23,7 +23,6 @@ public class TestJDSearchDataProviderSimple extends TestCase {
 		String actual_procut_name= new JDHomepage().init().searchHeader.search(keyword).getProductNameByIndexMethodTwo(1);
 		log.info("actual_procut_name="+actual_procut_name);
 		assert(actual_procut_name.contains(keyword));
-		
 		log.info("--------------------------------");
 	}
 
@@ -34,7 +33,7 @@ public class TestJDSearchDataProviderSimple extends TestCase {
 	public Object[][] createData1() {
 		 return new Object[][] {
 		   { "巧克力" },
-		   { "饼干"},
+		   { "饼"},
 		   { "核桃"},
 		 };
 		}

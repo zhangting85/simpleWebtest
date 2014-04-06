@@ -53,6 +53,8 @@ public class TestCase {
 	 */
 	@BeforeClass(alwaysRun=true)
 	protected void testCaseStart(){
+	//打印分隔符
+	log.info("#####################################################");
 	//打印类名
 	log.info("\\/\\/\\/\\/\\/\\/---TestCase = "+ this.getClass().getSimpleName()+"---\\/\\/\\/\\/\\/\\/");
 	}

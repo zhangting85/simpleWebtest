@@ -18,7 +18,7 @@ public class TestBaiduHome {
 		driver.findElement(By.id("su1")).click();//点击搜索按钮click the search button
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);//等页面加载，10秒内不加载成功即报超时。waiting for 10 seconds						
 		String aResult=driver.findElement(By.xpath(".//*[@id='4']/h3/a")).getText();//取第四条搜索结果的标题。 get the text of 4th search result
-		assert aResult.contains("GitHub");//做断言 assertion
+		assert aResult.toLowerCase().contains("github");//做断言 assertion
 		driver.findElement(By.xpath(".//*[@id='4']/h3/a")).click();//打开第四个搜索结果。Open the 4th search result on baidu
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);//等页面加载，10秒内不加载成功即报超时。waiting for 10 seconds						
 		
@@ -29,7 +29,7 @@ public class TestBaiduHome {
 		
 		String aTitle=driver.getTitle();//取新窗口的title
 		System.out.println("current widnow title is:"+aTitle);//打出来看看
-		assert aTitle.contains("GitHub");//断言
+		assert aTitle.toLowerCase().contains("github");//断言
 		
 	}
 }

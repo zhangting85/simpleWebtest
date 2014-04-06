@@ -21,7 +21,7 @@ http://www.cnblogs.com/sdet/p/3648530.html
 selenium从入门到应用 - 5，页面对象设计模式下的页面模块
 
 selenium从入门到应用 - 6，EventFiringWebDriver和监听器
-
+http://www.cnblogs.com/sdet/p/3648993.html
 
 Maven 小技巧之 自动更新你的jar包
 http://www.cnblogs.com/sdet/p/3646235.html

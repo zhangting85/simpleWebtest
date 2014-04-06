@@ -2,6 +2,9 @@ package simplewebtest.core;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
@@ -21,22 +24,51 @@ public class TestCase {
 	 * 打log用的对象。
 	 * print log
 	 */
-	private Log log = LogFactory.getLog(this.getClass());
+	protected Log log = LogFactory.getLog(this.getClass());
+	
 	/**
 	 * 决定这个TestCase是用什么浏览器的driver来执行。
 	 * 由于设置了BeforeMethod标签，这个方法将由TestNG在每个TestMethod被执行前调用。
-	 * private使他不会被别人调用。
-	 * 他将接收一个传入参数表示浏览器种类。
-	 * 最后告诉manager我要新建及保存的driver的类型。
+	 * 他将接收一个从TestNG的xml文件传入的参数表示浏览器种类。
+	 * 告诉manager我要新建及保存的driver的类型。
 	 * runs by testNG, it will be run before every test method to decide the driver type 
 	 * @param browser：从testng的xml文件传入的浏览器名称。 默认值为firefox
 	 */
 	@BeforeMethod(alwaysRun=true)
 	@Parameters("brwoser")
-	protected void setDriver(@Optional("firefox") String browser){
-	//打印类名
-	log.info("TestCase = "+ this.getClass().getSimpleName());
+	protected void testMethodStart(@Optional("firefox") String browser){
 	manager.setDriver(browser);
 	}
-
+	
+	/**
+	 * 在一个测试方法结束时再打一遍名字关闭driver，这部分可以根据需要调整
+	 * runs by testNG, it will be run after every test method to close the driver
+	 */
+	@AfterMethod(alwaysRun=true)
+	protected void testMethodEnd(){
+	manager.getDriver().quit();
+	}
+	
+	/**
+	 * 打印类名。建议一个CASE只放一个方法。
+	 * Print Class Name
+	 */
+	@BeforeClass(alwaysRun=true)
+	protected void testCaseStart(){
+	//打印类名
+	log.info("\\/\\/\\/\\/\\/\\/---TestCase = "+ this.getClass().getSimpleName()+"---\\/\\/\\/\\/\\/\\/");
+	}
+	
+	/**
+	 * 再次打印类名
+	 * Print Class Name again and separator
+	 */
+	@AfterClass(alwaysRun=true)
+	protected void testCaseEnd(){
+	//打印类名
+	log.info("/\\/\\/\\/\\/\\/\\---TestCase = "+ this.getClass().getSimpleName()+"---/\\/\\/\\/\\/\\/\\");
+	//打印分隔符
+	log.info("#####################################################");
+	}
+	
 }

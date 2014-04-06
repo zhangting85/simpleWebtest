@@ -1,7 +1,7 @@
-package simplewebtest.core.page.sample;
+package simplewebtest.core.page.sample.jd;
 
 import simplewebtest.core.Page;
-import simplewebtest.core.page.module.sample.SearchHeaderModule;
+import simplewebtest.core.page.module.sample.jd.SearchHeaderModule;
 /**
  *京东首页
  */

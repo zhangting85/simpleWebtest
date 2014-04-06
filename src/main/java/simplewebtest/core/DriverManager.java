@@ -30,5 +30,13 @@ public class DriverManager {
 	public WebDriver getDriver(){
 		return driver;
 	}
+	
+	/**
+	 * 关浏览器，Windows上需要在这里杀进程的步骤
+	 * quit the driver
+	 */
+	public void quitDriver(){
+		getDriver().quit();
+	}
 
 }

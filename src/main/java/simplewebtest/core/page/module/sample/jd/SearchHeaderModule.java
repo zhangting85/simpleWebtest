@@ -1,10 +1,10 @@
-package simplewebtest.core.page.module.sample;
+package simplewebtest.core.page.module.sample.jd;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import simplewebtest.core.Page;
-import simplewebtest.core.page.sample.JDItemlistPage;
+import simplewebtest.core.page.sample.jd.JDItemlistPage;
 
 
 /**

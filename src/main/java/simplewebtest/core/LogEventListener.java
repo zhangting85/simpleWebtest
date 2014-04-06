@@ -1,5 +1,7 @@
 package simplewebtest.core;
 
+import java.util.concurrent.TimeUnit;
+
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.openqa.selenium.By;
@@ -22,9 +24,8 @@ public class LogEventListener implements WebDriverEventListener {
 	}
 
 	@Override
-	public void afterClickOn(WebElement arg0, WebDriver arg1) {
-		// TODO Auto-generated method stub
-		
+	public void afterClickOn(WebElement arg0, WebDriver driver) {
+		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);//to wait
 	}
 
 	@Override

@@ -19,9 +19,12 @@ selenium从入门到应用 - 4，页面对象设计模式的实现
 http://www.cnblogs.com/sdet/p/3648530.html
 
 selenium从入门到应用 - 5，页面对象设计模式下的页面模块
+http://www.cnblogs.com/sdet/p/3649096.html
 
 selenium从入门到应用 - 6，EventFiringWebDriver和监听器
 http://www.cnblogs.com/sdet/p/3648993.html
+
+selenium从入门到应用 - 7，数据驱动的selenium测试脚本
 
 Maven 小技巧之 自动更新你的jar包
 http://www.cnblogs.com/sdet/p/3646235.html

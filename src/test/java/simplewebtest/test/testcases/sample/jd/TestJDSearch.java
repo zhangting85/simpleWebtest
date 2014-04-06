@@ -18,7 +18,7 @@ public class TestJDSearch extends TestCase {
 		
 		//结果页面the expected result page 
 		JDItemlistPage resultPage=home.init().searchHeader.search("巧克力");
-		//actual result: 用三种方法找出第一个商品名字，作为实际结果.（回字有五种写法:P）
+		//actual result: 用四种方法找出第一个商品名字，作为实际结果.（回字有五种写法:P）
 	
 		String product_1= resultPage.firstproduct.getText();//不推荐，但偶尔有适用场景
 		String product_2= resultPage.getFirstProductName();//不推荐，但偶尔有适用场景

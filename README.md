@@ -17,7 +17,5 @@ selenium从入门到应用 - 3，进阶线性脚本的编写
 
 selenium从入门到应用 - 4，页面对象设计模式和页面模块的实现
 
-selenium从入门到应用 - 5，页面对象设计模式和页面模块的原理
-
 Maven 小技巧之 自动更新你的jar包
 http://www.cnblogs.com/sdet/p/3646235.html

@@ -1,6 +1,7 @@
 package simplewebtest.core.page.sample.jd;
 
 import simplewebtest.core.Page;
+import simplewebtest.core.TestCase.DriverManager;
 import simplewebtest.core.page.module.sample.jd.SearchHeaderModule;
 /**
  *京东首页
@@ -30,7 +31,7 @@ public SearchHeaderModule searchHeader=new SearchHeaderModule();
  * return new xxxPage means page redirects after this method
  */
 public JDHomepage init(){
-	manager.getDriver().get(URL);
+	DriverManager.driver.get(URL);
 	return this;
 }
 

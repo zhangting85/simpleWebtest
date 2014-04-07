@@ -1,12 +1,17 @@
 package simplewebtest.test.testcases.sample.jd;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Iterator;
+import java.util.List;
+
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import simplewebtest.core.TestCase;
 import simplewebtest.core.page.sample.jd.JDHomepage;
 
-public class TestJDSearchDataProviderSimple extends TestCase {
+public class TestJDDataDriven extends TestCase {
 
 	
 	
@@ -30,12 +35,22 @@ public class TestJDSearchDataProviderSimple extends TestCase {
 	 * 一个返回Object2维数组的DataProvider
 	 */
 	@DataProvider(name="product_to_search")
-	public Object[][] createData1() {
-		 return new Object[][] {
-		   { "巧克力" },
-		   { "饼"},
-		   { "核桃"},
-		 };
+	public Iterator<Object[]> createData1() {
+		//一个Array
+		String[] astringarray={"巧克力","饼","糕","蛋"};
+		//转成一个String的List
+		List<String> lines=Arrays.asList(astringarray);
+	     
+		//一个Object的空的List
+		List<Object[]> data = new ArrayList<Object[]>();
+	       
+		//往空List里放东西，然后返回
+		for (String line :lines )
+	        {
+	            data.add(new Object[]{line});
+	        }
+	        return data.iterator();
+
 		}
 	
 }

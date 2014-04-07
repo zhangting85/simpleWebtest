@@ -33,6 +33,7 @@ public class SearchHeaderModule extends Page {
 	 * @return 返回一个JDItemlistPage
 	 */
 	public JDItemlistPage search(String keyword) {
+		searchInput.clear();
 		searchInput.sendKeys(keyword);
 		searchButton.click();
 		return new JDItemlistPage();

@@ -10,7 +10,7 @@ public class Page {
 	 * it auto calls by all sub-page
 	 */
 	public Page() {
-		PageFactory.initElements(DriverManager.driver, this);
+		PageFactory.initElements(DriverManager.getDriver(), this);
 	}
 
 }

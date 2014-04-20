@@ -31,7 +31,7 @@ public SearchHeaderModule searchHeader=new SearchHeaderModule();
  * return new xxxPage means page redirects after this method
  */
 public JDHomepage init(){
-	DriverManager.driver.get(URL);
+	DriverManager.getDriver().get(URL);
 	return this;
 }
 

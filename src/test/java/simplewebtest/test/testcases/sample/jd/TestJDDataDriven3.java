@@ -5,6 +5,8 @@ import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -23,7 +25,6 @@ public class TestJDDataDriven3 extends TestCase {
 	 */
 	@Test(dataProvider="product_to_search")
 	public void searchProduct(String keyword) throws InterruptedException {
-		
 		log.info("keyword="+keyword);
 		String actual_procut_name= new JDHomepage().init().searchHeader.search(keyword).getProductNameByIndexMethodTwo(1);
 		log.info("actual_procut_name="+actual_procut_name);
@@ -34,6 +35,10 @@ public class TestJDDataDriven3 extends TestCase {
 	/**
 	 * 用了DataProvider并且是并行的。但是这个是运行不通过的。因为WebDriver不是线程安全的。
 	 * 稍后我会再修复这个。。。暂时先这样吧。
+	 * 
+	 * 2014-4-20：更新了DriverManager，现在这个框架里的WebDriver是线程安全的了，所以这个脚本就可以并行执行4个测试数据了。
+	 * 详见DriverManager类
+	 * 
 	 */
 	@DataProvider(name="product_to_search",parallel = true)
 	public Iterator<Object[]> createData1() {
@@ -48,7 +53,7 @@ public class TestJDDataDriven3 extends TestCase {
 		//往空List里放东西，然后返回
 		for (String line :lines )
 	        {
-	            data.add(new Object[]{line});
+	            data.add(new Object[]{line});//加了一个FirefoxDriver进去哦
 	        }
 	        return data.iterator();
 

@@ -35,7 +35,7 @@ public class TestCase {
 	@BeforeMethod(alwaysRun=true)
 	@Parameters("brwoser")
 	protected void testMethodStart(@Optional("firefox") String browser){
-	DriverManager.setDriver(browser);
+	DriverManager.setupDriver(browser);
 	}
 	
 	/**
@@ -76,28 +76,47 @@ public class TestCase {
 	 */
 	public static class DriverManager {
 		/**
-		 * 每个DriverManager只管理一个driver，所以他是static的 
-		 * shares the same web driver
+		 * 每个DriverManager只管理一个driver，所以他是static的，但是我引入ThreadLocal来处理多线程
+		 * shares the same web driver and use thread local to handle the multi-thread
 		 */
-		public static WebDriver driver;
+		public static ThreadLocal<WebDriver> ThreadDriver=new ThreadLocal<WebDriver>() ;
+		public static String browserType;
+		
+		
+		/**
+		 * 如果当前进程没有绑定driver，创建一个然后绑定上，如果已经有了就直接返回
+		 * create a driver for this thread if not exist. or return it directly
+		 */
+		public static WebDriver getDriver(){
+			WebDriver driver= DriverManager.ThreadDriver.get();
+			if (driver==null){
+				if (browserType.equals("firefox")){
+					 driver = new EventFiringWebDriver(new FirefoxDriver()).register(new LogEventListener());
+					 ThreadDriver.set(driver);
+				}
+				//有需求的同学自己在这里添加IE等浏览器的支持
+				//you can add ie/chrome or other driver here
+				}
+			return driver;
+		}
+		
+		
 		/**
 		 * 根据TestCase的要求来新建一个driver并保存起来
 		 * crate and saves the driver according to the browser type
+		 * @param browser:浏览器名字
 		 */
-		public static void setDriver(String browser){
-			if (browser.equals("firefox")){
-				 driver = new EventFiringWebDriver(new FirefoxDriver()).register(new LogEventListener());
-			}
-			//有需求的同学自己在这里添加IE等浏览器的支持
-			//you can add ie/chrome or other driver here
+		public static void setupDriver(String browser){
+			browserType=browser;
+
 		}		
-		
+	
 		/**
 		 * 关浏览器，Windows上需要在这里杀进程的步骤
 		 * quit the driver
 		 */
 		public static void quitDriver(){
-			driver.quit();
+			getDriver().quit();
 		}
 
 	}

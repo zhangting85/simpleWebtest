@@ -12,9 +12,10 @@ public class TestJDSearch extends TestCase {
 	 * JD首页上搜索一个商品 主要介绍定位某个商品名称的N种写法
 	 */
 	@Test
-	public void searchProduct() throws InterruptedException {
+	public void searchProduct()  {
 		log.info("这是测试方法里的第一句打印的log");
-		JDHomepage home = new JDHomepage();
+			JDHomepage home = new JDHomepage();
+
 		
 		//结果页面the expected result page 
 		JDItemlistPage resultPage=home.init().searchHeader.search("巧克力");
@@ -35,7 +36,7 @@ public class TestJDSearch extends TestCase {
 		assert(product_1.equals(product_2));
 		assert(product_1.equals(product_3));
 		assert(product_1.equals(product_4));
-		
+
 		log.info("这是测试方法里的最后一句打印的log");
 	}
 

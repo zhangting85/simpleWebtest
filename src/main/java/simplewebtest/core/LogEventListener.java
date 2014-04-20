@@ -39,7 +39,7 @@ public class LogEventListener implements WebDriverEventListener {
 	    public void beforeFindBy(By by, WebElement element, WebDriver selenium){
 	    	lastFindBy = by;
 	    	//找东西前等三秒wait 3 second for every find by
-	    	DriverManager.driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+	    	DriverManager.getDriver().manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 	    }
 	 
 	    public void onException(Throwable error, WebDriver selenium){

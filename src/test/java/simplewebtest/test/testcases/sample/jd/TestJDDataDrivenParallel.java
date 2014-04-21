@@ -5,15 +5,13 @@ import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import simplewebtest.core.TestCase;
 import simplewebtest.core.page.sample.jd.JDHomepage;
 
-public class TestJDDataDriven3 extends TestCase {
+public class TestJDDataDrivenParallel extends TestCase {
 
 	
 	

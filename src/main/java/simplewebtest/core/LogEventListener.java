@@ -20,7 +20,7 @@ import simplewebtest.core.TestCase.DriverManager;
  */
 public class LogEventListener implements WebDriverEventListener {
 	private Log log = LogFactory.getLog(this.getClass());
-	 
+	 	
 	    private By lastFindBy;
 	    private String originalValue;
 	 
@@ -38,10 +38,8 @@ public class LogEventListener implements WebDriverEventListener {
 	 
 	    public void beforeFindBy(By by, WebElement element, WebDriver selenium){
 	    	lastFindBy = by;
-	    	//找东西前等三秒wait 3 second for every find by
-	    	DriverManager.getDriver().manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 	    }
-	 
+	    //这个以后要改掉。这段不是很好用
 	    public void onException(Throwable error, WebDriver selenium){
 	        if (error.getClass().equals(NoSuchElementException.class)){
 	            log.error("WebDriver error: Element not found "+lastFindBy);
@@ -55,7 +53,7 @@ public class LogEventListener implements WebDriverEventListener {
 	    public void beforeClickOn(WebElement element, WebDriver selenium){}
 	    public void beforeScript(String script, WebDriver selenium){}
 	    public void afterClickOn(WebElement element, WebDriver selenium){
-	    	String locator=element.toString().split("-> ")[1];
+	    	String locator=element.toString().split("-> ")[1];//为了使log更短
 	    	log.info("WebDriver clicking on:'"+locator.substring(0, locator.length()-1)+"'");
 	    }
 	    public void afterFindBy(By by, WebElement element, WebDriver selenium){}

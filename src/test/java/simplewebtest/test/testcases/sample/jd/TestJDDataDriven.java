@@ -25,6 +25,7 @@ public class TestJDDataDriven extends TestCase {
 	public void searchProduct(String keyword) throws InterruptedException {
 		
 		log.info("keyword="+keyword);
+		//方法链。方法链并不会导致调试困难，因为我是先写线性脚本后重构成这种脚本this is a method chain
 		String actual_procut_name= new JDHomepage().init().searchHeader.search(keyword).getProductNameByIndexMethodTwo(1);
 		log.info("actual_procut_name="+actual_procut_name);
 		assert(actual_procut_name.contains(keyword));
@@ -32,7 +33,7 @@ public class TestJDDataDriven extends TestCase {
 	}
 
 	/**
-	 * 一个返回Object2维数组的DataProvider
+	 * 一个返回iterator的的DataProvider
 	 */
 	@DataProvider(name="product_to_search")
 	public Iterator<Object[]> createData1() {

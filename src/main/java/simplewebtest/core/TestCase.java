@@ -50,7 +50,7 @@ public class TestCase {
 	 */
 	@AfterMethod(alwaysRun=true)
 	protected void testMethodEnd(){
-	DriverManager.quitDriver();;
+	DriverManager.quitDriver();
 	}
 	
 	/**
@@ -128,6 +128,7 @@ public class TestCase {
 		 */
 		public static void quitDriver(){
 			getDriver().quit();
+			DriverManager.ThreadDriver.set(null);
 		}
 
 	}
